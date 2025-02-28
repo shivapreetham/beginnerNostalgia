@@ -1,0 +1,20 @@
+.samuel{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(21, 66, 105);
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#buton{
+    background-color: aliceblue;
+}
+.dark{
+    background-color: black;
+    color:aliceblue;
+}
+.light{
+    background-color: white;
+    color:black;
+}

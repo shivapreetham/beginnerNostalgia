@@ -1,0 +1,58 @@
+/* .img
+{
+    width: 200px;
+    height: 250px;
+    background-image: url(pen.png);;
+}
+.outbox
+{
+    position: center;
+    align-items: center;
+    padding: 20px;
+    border:10px solid rgb(44, 39, 39);
+    border-radius: 20px     ;
+    height: 350px;
+    width: 210px;
+    background-color: antiquewhite;
+}
+.name{
+    font-weight: 300;
+}
+
+.price{
+    display: flex;
+    width: max-content;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.deals
+{
+    height: 16px;
+    width:80px;
+    font-size: 12px;
+     display: flex;
+     
+     background-color: rgb(181, 6, 6);
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+     color: bisque;
+}
+.currentprice{
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.rating{
+    color:gold;
+
+    display: flex;
+}
+.no{
+    color:aqua;
+}
+.off{
+    font-weight: 1000;
+} */
+
+
+

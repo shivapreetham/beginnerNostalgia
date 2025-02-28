@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Ubuntu:wght@300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,500;1,400&display=swap');
+
+/* Your existing styles for .nav */
+body{
+    background-color: rgb(0, 0, 0);
+}
+.nav {
+    color: rgba(0, 0, 0, 0.406);
+    background-color: transparent;
+    display: flex;
+    height: 9vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logoslot {
+    display: inline-block;
+    background-color: transparent;
+}
+
+#logo {
+    height: 9vh;
+    border: 2px peachpuff solid;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 9vh;
+    background-color: transparent;
+}
+#youracc{
+    background-color: slateblue;
+}
+#profilepic {
+    height: 7vh;
+    border: 2px peachpuff solid;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 7vh;
+    background-color: transparent;
+
+}
+
+#nleft {
+    display: flex;
+    background-color: transparent;
+
+}
+
+#nright {
+    display: flex;
+    gap: 5vw;
+    background-color: transparent;
+
+}
+
+#home,
+#hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    border: 1px solid #434343;
+}
+
+#home,
+#hamburger i{
+   color: aqua;
+}
+
+
+/* asli khel yaha se hi*/
+
+.flexy{
+    
+    height:100vh;
+    background-color: #303030;
+    column-count: 5;
+    column-gap:1vw;
+    
+}
+
+.item{
+    border: grey 2px solid;
+    border-radius: 16px;
+    margin-bottom: 1vw;
+    overflow: hidden;
+    break-inside:avoid-column;
+   
+    position: relative;
+    min-width: 18vw;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+
+#item1{
+    background-image: url(/@baapu/animegirlwallpaperchooser/wp.media/g1\ \(11\).jpg);   
+}
+
+#item2{
+    background-image: url(/@baapu/animegirlwallpaperchooser/wp.media/g1\ \(11\).jpg);   
+
+}
+
+#item3{
+    background-image: url(/@baapu/animegirlwallpaperchooser/wp.media/g1\ \(11\).jpg);   
+}

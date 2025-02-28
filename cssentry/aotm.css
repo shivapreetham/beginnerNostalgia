@@ -1,0 +1,283 @@
+*{
+    padding:0;
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border: border-box;
+
+}
+
+.navbar{
+    height: 110px;
+    background-color:#0F0F0E;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.logo
+{    
+    height:100px;
+    width:170px;
+    background-size:cover;
+    background-image: url("/meaww/webdlogo.png");
+}
+.border
+{
+    width:fit-content;
+    border: 2px solid transparent ;
+}
+.border:hover
+{
+    border: 2px solid whitesmoke;
+}
+/** box2*/
+.a-f{
+    font-size: 14px;
+    color:aliceblue;
+    margin-left: 10px;
+}
+.a-s{
+    
+    margin-left:5px;
+    font-size:16px;
+    color: antiquewhite;
+}
+.add-icon{
+    display:flex;
+    margin-top: 5px;
+
+}
+/**searching part*/
+.nav-search{
+    margin-left: 40px;
+    background-color:rgb(215, 27, 58);
+    display:flex;
+    border-radius:4px;
+    width:710px;
+ 
+}
+.nav-search:hover
+{
+    border:3px  rgb(211, 83, 83);
+    border-style:ridge;
+}
+.search-select{
+    height: 42px;
+    width:70px;
+    font-size:15px;
+    border-radius:4px;
+    text-align: center;
+    border: none;
+    
+}
+.search-input{
+    text-align: center;
+    margin-left: 5px;
+    height:39px;
+    width:100%;
+    font-size:16px;
+}
+.search-icon{
+    
+    height:40px;
+    width:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #0F0F0E;
+}
+/**sign in */
+.nav-signin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+a{
+    color:aliceblue;
+    text-decoration: none;
+}
+.nav2{
+    font-weight:bold ;
+    font-size: smaller;
+}
+.nav1{
+    font-size: smaller;
+}
+.nav4{
+    font-weight:bold ;
+    font-size: smaller;
+}
+.nav3{
+    font-size: smaller;
+}
+/**box5*/
+.nav-cart i{
+    font-size: 35px;
+}
+.nav-cart{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display:flex;
+    justify-content: center;
+    background-color:crimson;
+    border-radius: 10px;
+    ;
+}
+/**panel section baabu*/
+.panel{
+    display:flex;
+    background-color: rgb(45, 41, 41);
+    color: bisque;
+    height:40px;
+    align-items: center;
+    justify-content:space-evenly ;
+}
+.panel-ops
+{
+    font-size: 14px;
+    border:2px solid rgb(119, 119, 119);
+    display:flex;
+    justify-content: space-evenly;
+    width:70%;
+    height:35px;
+    align-items: center;
+    border-radius: 8px;
+}
+.panel-ops p
+{
+    justify-content:space-evenly ;
+    
+    display: flex;
+    display: inline;
+}
+/**major section- hero section*/
+
+
+.hero{
+    height: 300px;
+    width:1000%;
+    background-image: url(/meaww/hero-pic1-transformed.png);
+    background-size: contain;
+}
+.hero-quote{
+    display: flex;
+    height:20px;
+    width:100%;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    bORDER:2px solid red;
+}
+/**shop section*/
+.shop-section{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    height: 960px;
+    width:100%;
+     background-color:rgb(32, 29, 29); 
+    
+    background-size:contain;
+    }
+
+
+    .box{
+    
+    border-radius: 8px;;
+    margin-top: 25px;
+    border:2px solid rgb(255, 0, 0);
+    height:400px;
+    width:23%;
+    background-color:#9a9691;
+    padding:20px 0px 15px;
+}
+
+.box1-img{
+    margin-top:16px;
+    margin-bottom: 16px;
+    height: 300px;
+    background-image: url(/meaww/aot-chead.png);
+    background-size:cover;    
+}
+.box-content{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    text-decoration: underline;
+    text-shadow: 2px;
+    margin-left:10px;
+    margin-right:10px;
+}
+.box2-img{
+    margin-top:16px;
+    margin-bottom: 16px;
+    height: 300px;
+    background-image: url(/meaww/aota-head.png);
+    background-size:cover;    
+}.box3-img{
+    margin-top:16px;
+    margin-bottom: 16px;
+    height: 300px;
+    background-image: url(/meaww/aoth.png);
+    background-size:cover;    
+}.box4-img{
+    margin-top:16px;
+    margin-bottom: 16px;
+    height: 300px;
+    background-image: url(/meaww/aotghead.png);
+    background-size:cover;    
+}
+.box5-img{
+    margin-top:16px;
+    margin-bottom: 16px;
+    height: 300px;
+    background-image:url(/meaww/aotsthead.png);
+    background-size:cover;    
+}
+.box6-img{
+    margin-top:16px;
+    margin-bottom: 16px;
+    height: 300px;
+    background-image: url(/meaww/aotf-head.png);
+    background-size:cover;    
+}
+.box7-img{
+    margin-top:16px;
+    margin-bottom: 16px;
+    height: 300px;
+    background-image: url(/meaww/aotm-head.png);
+    background-size:cover;    
+}
+.box8-img{
+    margin-top:16px;
+    margin-bottom: 16px;
+    height: 300px;
+    background-image: url(/meaww/aot-luck.png);
+    background-size:cover;    
+}
+/**footer*/
+.foot-top{
+    height:30px;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color: aliceblue;
+    font-size: small;
+    border-top:2px double rgb(255, 102, 102);
+}
+.foot-mid{
+    height:120px;
+    width: 100%;
+    background-color: rgb(59, 59, 59);
+    border-top:2px double rgb(255, 102, 102); 
+}
+.foot-last{
+    border-top:2px double rgb(255, 102, 102);
+    background-color:rgb(39, 1, 1);
+    height:100px;
+    width: 100%;
+}

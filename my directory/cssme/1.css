@@ -1,0 +1,448 @@
+
+/* expanded to compress */
+
+@keyframes animation {
+    from {
+      letter-spacing: 32px;
+    }
+    to {
+      letter-spacing: 0;
+    }
+  }
+  
+  .animated {
+    animation: animation 5s ease infinite;
+  }
+  
+  h2 {
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+/* professional hovering effect*/
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+  }
+
+  /* for giving sapces as it is , as we actually wish*/
+
+  p{
+    white-space: pre-wrap;
+  }
+
+  /*translation animation property
+  html code for it-
+  <div class="container">
+  <svg width="209px" height="210px" viewBox="373 790 209 210" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <linearGradient x1="7.20890219%" y1="-7.07542877%" x2="93.8223221%" y2="112.892054%" id="greenGradient">
+        <stop stop-color="#6AEFC6" offset="0%"></stop>
+        <stop stop-color="#698D28" offset="100%"></stop>
+      </linearGradient>
+    </defs>
+    <path d="M477.5,999.318064 C535.213756,999.318064 582,952.531821 582,894.818064 C582,837.104308 535.213756,790.318064 477.5,790.318064 C419.786244,790.318064 373,837.104308 373,894.818064 C373,952.531821 419.786244,999.318064 477.5,999.318064 L477.5,999.318064 L477.5,999.318064 L477.5,999.318064 Z M476.5,936.318064 C499.419817,936.318064 518,917.737881 518,894.818064 C518,871.898247 499.419817,853.318064 476.5,853.318064 C453.580183,853.318064 435,871.898247 435,894.818064 C435,917.737881 453.580183,936.318064 476.5,936.318064 L476.5,936.318064 L476.5,936.318064 L476.5,936.318064 Z" fill="url(#greenGradient)" fill-rule="evenodd"></path>
+  </svg>
+</div>*/
+
+
+svg {
+    animation: steps;
+    animation-duration: 4s;
+    animation-timing-function: steps(8);
+    animation-iteration-count: infinite;
+    width: 120px;
+    height: 120px;
+  }
+  
+  @keyframes steps {
+    from {
+      transform: translateX(-140px);
+    }
+    to {
+      transform: translateX(160px);
+    }
+  }
+
+
+  /*writing format
+  <div class="container">
+  <div>
+    <div class="circle -shape-outside">
+      <img src="https://unsplash.it/400/400">
+    </div>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa tellus, mollis sit amet sodales vitae, placerat dignissim mi. Pellentesque interdum lacus eget diam maximus consequat quis ut dolor. Nullam massa odio, rhoncus ac varius non, porta in arcu. Nulla tempus, mi ac facilisis cursus, leo nulla ultrices erat, vitae lobortis metus diam at nibh. Sed commodo augue eu sodales porttitor. Phasellus non malesuada purus, nec scelerisque massa. Etiam vitae aliquam augue, sed pharetra felis. Fusce sodales tellus vitae mi suscipit dignissim. Mauris ac tempor lacus, non vulputate nunc. Sed rutrum, augue et suscipit vulputate, diam felis ornare massa, et efficitur sapien nisl ac lectus. Nulla congue magna orci, a lacinia elit convallis.
+  </div>
+</div>*/
+.-shape-outside {
+    shape-outside: circle(50%);
+    float: left;
+  }
+  
+  .circle {
+    width: 160px;
+    height: 160px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 24px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  div {
+    text-align: justify;
+  }
+  
+  html, body {
+    height: auto;
+  }
+
+
+
+  /*sticky nav bar
+  html-
+  <div class="container -column">
+  <nav class="-sticky">
+    <a class="nav-item">Home</a>
+    <a class="nav-item">About Us</a>
+    <a class="nav-item">Contact Us</a>
+  </nav>
+  <div class="content">
+    <p><strong>Currently works on Firefox, Safari and Chrome 56.</strong></p>
+    <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar egestas sapien a venenatis. Phasellus aliquet non sem vestibulum finibus. Fusce venenatis condimentum justo, non gravida sapien ornare vitae. Sed efficitur condimentum tincidunt. Quisque congue sagittis lectus, in pharetra tortor semper a. Ut tincidunt ornare sem, eget eleifend felis. Suspendisse urna est, pharetra convallis tellus id, tincidunt venenatis odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam condimentum, ante id commodo accumsan, massa dolor hendrerit justo, in dapibus velit nisi sed tellus. In non tortor rhoncus, dapibus ante a, faucibus nisi.      
+    </p>
+    <h1>About Us</h1>
+    <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar egestas sapien a venenatis. Phasellus aliquet non sem vestibulum finibus. Fusce venenatis condimentum justo, non gravida sapien ornare vitae. Sed efficitur condimentum tincidunt. Quisque congue sagittis lectus, in pharetra tortor semper a. Ut tincidunt ornare sem, eget eleifend felis. Suspendisse urna est, pharetra convallis tellus id, tincidunt venenatis odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam condimentum, ante id commodo accumsan, massa dolor hendrerit justo, in dapibus velit nisi sed tellus. In non tortor rhoncus, dapibus ante a, faucibus nisi.      
+    </p>
+    <h1>Contact Us</h1>
+    <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar egestas sapien a venenatis. Phasellus aliquet non sem vestibulum finibus. Fusce venenatis condimentum justo, non gravida sapien ornare vitae. Sed efficitur condimentum tincidunt. Quisque congue sagittis lectus, in pharetra tortor semper a. Ut tincidunt ornare sem, eget eleifend felis. Suspendisse urna est, pharetra convallis tellus id, tincidunt venenatis odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam condimentum, ante id commodo accumsan, massa dolor hendrerit justo, in dapibus velit nisi sed tellus. In non tortor rhoncus, dapibus ante a, faucibus nisi.      
+    </p>
+  </div>
+</div>*/
+.-sticky {
+   position: -webkit-sticky;   /*// safari */
+    position: sticky;
+    top: 12px; /*will stick at this point*/
+  }
+  
+  nav {
+    width: 316px;
+    height: 42px;
+    background-color: #fff;
+    border-radius: 21px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+    padding: 0 32px;
+    box-sizing: border-box;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    .nav-item {
+      color: #505050;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 0.875em;
+      line-height: 42px;
+      font-weight: 700;
+      transition: color 0.3s ease;
+      cursor: pointer;
+      &:hover {
+        color: #44BF75;
+      }
+    }
+  }
+  
+  .content {
+    margin-top: 36px;
+  }
+  
+  strong {
+    color: #44BF75;
+  }
+  
+  html, body {
+    height: auto;
+  }
+
+
+
+  /*hover animation*
+  html-
+  <div class="container -column">
+  <div class="perspective">
+    <div class="card -small">
+      <a class="card--title" href="#">Card with perspective</a>
+      <p class="card--text">
+        hover to see the effect
+      </p>
+    </div>
+  </div>
+  <div>
+    <div class="card -small">
+      <a class="card--title" href="#">Card with no perspective</a>
+      <p class="card--text">
+        hover to see the difference
+      </p>
+    </div>
+  </div>
+</div>*/
+  .perspective {
+  perspective: 500px; /*// try playing with this value */
+}
+
+.card {
+  transition: transform 1s ease; 
+  &:hover {
+    transform: rotateY(-60deg);
+  }
+}
+
+  /*box decoration
+  html-
+  <div class="container">
+  <div class="wrap">
+    <span class="text -clone">
+       box-decoration-break property specifies how the element's background, padding, border, box-shadow, margin and clip are applied when it's wrapped into multiple lines.
+    </span>
+  </div>
+</div>*/
+.text {
+    font-size: 16px;
+    line-height: 2em;
+    background-image: linear-gradient(-144deg, #6AEEC6 0%, #698D28 100%);
+    border-radius: 4px;
+    padding: 4px 18px;
+    box-sizing: border-box;
+  }
+  
+  .wrap {
+    max-width: 320px;
+    margin: 1em auto;
+  }
+
+
+  /*video in the text - 
+  html-
+  <div class="container">
+  <div class="clip-text">
+    Hello World
+  </div>
+</div>*/
+.clip-text {
+    background: url(http://i.giphy.com/fsULJFFGv8X3G.gif);
+    background-size: cover;
+    background-position: center;
+    
+    /* -webkit-background-clip: text; */
+     color: transparent; /*// set to transparent, otherwise won't see the background */
+    
+    width: 300px;
+    height: 100px;
+    box-sizing: border-box;
+    font-size: 58px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    flex-shrink: 0;
+  }
+
+
+
+  /*spinning card
+  html-
+  <div class="container">
+  <div class="card">
+    <a class="card--title" href="#">Spinning card</a>
+    <p class="card--text">
+      demonstrating the backface visibility
+    </p>
+  </div>
+</div>*/
+@keyframes spin {
+    from {
+      transform: rotateY(0);
+    }
+    to {
+      transform: rotateY(1turn);
+    }
+  }
+  
+  .card {
+    animation: spin 5s ease;
+    animation-iteration-count: infinite;
+  }
+  
+  .container {
+    perspective: 1000px;
+  }
+
+
+  /*flipping card
+  html-
+  <div class="container -column">
+  <div class="card-holder">
+    <div class="card -small -back -flipped">
+      <a class="card--title" href="#">Flipping card</a>
+      <p class="card--text">
+        hiding backface is the key
+      </p>
+    </div>
+    <div class="card -small -front -orange">
+    </div>
+  </div>
+  <div class="card-holder">
+    <div class="card -small -back -flipped">
+      <a class="card--title" href="#">Flipping card</a>
+      <p class="card--text">
+        hiding backface is the key
+      </p>
+    </div>
+    <div class="card -small -front -green">
+    </div>
+  </div>
+</div>*/
+.card-holder {
+    position: relative;
+    width: 320px;
+    height: 148px;
+    &:hover {
+      .card.-front {
+        transform: rotateY(-0.5turn);
+      }
+      .card.-back {
+        transform: rotateY(0turn);
+      }
+    }
+  }
+  
+  .card {
+    position: absolute;
+    transition: transform 1s ease;
+    backface-visibility: hidden;
+  }
+  .-flipped {
+    transform: rotateY(0.5turn);
+  }
+  .container {
+    perspective: 1000px;
+  }
+
+
+  /*rortion somthing
+  html-
+  <div class="container">
+  <svg width="120px" height="120px" viewBox="109 795 201 201" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <linearGradient x1="10.3068633%" y1="-9.76665326%" x2="90.6981348%" y2="109.765008%" id="purpleGradient">
+        <stop stop-color="#9793FD" offset="0%"></stop>
+        <stop stop-color="#AA1FA8" offset="100%"></stop>
+      </linearGradient>
+    </defs>
+    <path d="M209.382098,846.977137 L161.119606,798.714646 C157.218342,794.813381 150.886443,794.813719 146.980837,798.719325 L112.40126,833.298902 C108.488849,837.211313 108.49356,843.534649 112.396582,847.437671 L160.659073,895.700162 L112.396582,943.962654 C108.495317,947.863918 108.495655,954.195817 112.40126,958.101422 L146.980837,992.681 C150.893249,996.593411 157.216585,996.5887 161.119606,992.685678 L209.382098,944.423187 L257.644589,992.685678 C261.545854,996.586943 267.877753,996.586605 271.783358,992.681 L306.362935,958.101422 C310.275347,954.189011 310.270635,947.865675 306.367614,943.962654 L258.105123,895.700162 L306.367614,847.437671 C310.268879,843.536406 310.26854,837.204507 306.362935,833.298902 L271.783358,798.719325 C267.870947,794.806913 261.547611,794.811625 257.644589,798.714646 L209.382098,846.977137 L209.382098,846.977137 Z" fill="url(#purpleGradient)"></path>
+  </svg>
+  <div class="count">
+    <span class="one delay-1">1</span>
+    <span class="two delay-2">2</span>
+    <span class="three delay-3">3</span>
+    <span class="four delay-4">4</span>
+  </div>
+</div>*/
+
+
+/* $timeUnit: 2;
+
+@keyframes spin {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(4turn);
+  }
+}
+
+svg {
+  animation: spin #{$timeUnit*4}s linear;
+}
+
+.count {
+  font-size: 120px;
+  line-height: 1em;
+  font-weight: bold;
+  height: 120px;
+  width: 120px;
+  text-align: center;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.one, .two, .three, .four {
+  animation-name: flash;
+  animation-duration: #{$timeUnit}s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  position: absolute;
+}
+
+.delay-1 {
+  animation-delay: #{$timeUnit*0.5}s;
+}
+.delay-2 {
+  animation-delay: #{$timeUnit*1.5}s;
+}
+.delay-3 {
+  animation-delay: #{$timeUnit*2.5}s;
+}
+.delay-4 {
+  animation-delay: #{$timeUnit*3.5}s;
+} */
+
+
+
+  /**/
+
+
+
+  /**/
+
+
+
+
+  /**/
+  /**/
+  /**/
+  /**/
+  /**/
+  /**/
+  /**/
+  /**/
+  /**/
+  /**/
+  /**/
+  /**/
+  /**/
+  /**/
+  /**/
+  /**/
+  /**/
