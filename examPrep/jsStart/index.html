@@ -1,0 +1,105 @@
+<!-- 1. HTML to define the content of web pages
+
+2. CSS to specify the layout of web pages
+
+3. JavaScript to program the behavior of web pages -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+    <button onclick="window.print()">Print this page</button>
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "hello my brother"'>Click Me!</button>
+<button type="button" onclick = 'document.getElementById("demo").style.fontSize="40px"'>make me bigger</button>
+
+<button type="button" onmouseover="document.getElementById('demo').innerHTML = JSON.stringify(calculateDays()); ">hover me to get time</button>
+
+<div id = "timer" style="height:100px; width:100px;color:rgb(166, 206, 206); background-color:rgb(0, 0, 0)"></div>
+
+<h1>JavaScript Objects</h1>
+<h2>Object Methods</h2>
+<p>A method is a function definition stored as a property value.</p>
+
+<p id="demo2"></p>
+
+<div id = "demo3">hello</div>
+
+
+<script> 
+
+    function calculateDays(){
+        const date = new Date();
+        const time = date.toLocaleTimeString();
+        const minutes = date.getMinutes();
+        const seconds = date.getSeconds();
+        var day = date.getDay();
+        const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+        day = days[day];
+        return {time, minutes, seconds, day};
+    }
+
+    function timer(){
+        setInterval(()=>{
+            const date = new Date();
+            const time = date.toLocaleTimeString();
+            document.getElementById("timer").innerHTML = time;
+        }, 1000); 
+    }
+    timer()
+    // const name = prompt('Enter your name');
+    document.getElementById("demo").innerHTML = `<h2>Hello ${name} World</h2>`;
+
+
+
+    // let person = "John Doe",
+    // carName = "Volvo",
+    // price = 200;
+    //     let x = 16 + 4 + "Volvo";
+    // Result:
+    // 20Volvo
+    // JavaScript:
+    // let x = "Volvo" + 16 + 4;
+    // Result:
+    // Volvo164
+
+
+    const person = {
+        firstName: "John",
+        lastName: "Doe",
+        id: 5566,
+        fullName: function() {
+            return this.firstName + " " + this.lastName;
+        }
+    };
+
+document.getElementById("demo2").innerHTML = person.fullName();
+
+const person2 = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+ mySaman = Object.values(person2);
+
+document.getElementById("demo2").innerHTML = mySaman;
+
+
+const fruits = {Bananas:300, Oranges:200, Apples:500}; 
+
+let text = "";
+for (let [fruit, amount] of Object.entries(fruits)) {
+  text += fruit + ": " + amount + "<br>";
+}
+
+document.getElementById("demo3").innerHTML = text;
+
+
+
+</script>
+</body>
+</html>
+
