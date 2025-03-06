@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>assignment 1</title>
+</header>
+<body>
+    <div id="colorChanger" style="height:100px;width:100px;background-color:red" onmouseenter="colorChange()" onmouseleave="colorChange()">
+        I change color on hover
+    </div>
+    <script>
+        function colorChange() {
+            currentColor=  document.getElementById('colorChanger').style.backgroundColor;
+            (currentColor=='green')?currentColor="red":currentColor="green";
+            document.getElementById('colorChanger').style.backgroundColor=currentColor;
+        }
+    </script>
+</body>
+</html>

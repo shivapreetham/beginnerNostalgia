@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>question3</title>
+    <style>
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="image-container">
+        <img src="g1 (1).jpg">
+    </div>
+    <button onclick="nextImage()">Next</button>
+    <script>
+        let imageArray = [];
+        let basePath = "@baapu/animegirlwallpaperchooser/wp.media/g1 (";
+        let extension = ").jpg";
+        for (let j = 1; j <= 46; j++) {
+            imageArray.push(basePath + j + extension);
+        }
+        let i = 0;
+        function nextImage() {
+            i = (i + 1) % imageArray.length;
+            let nextImg = imageArray[i];
+            document.getElementById('image-container').innerHTML = `<img src="${nextImg}">`;
+        }
+    </script>
+</body>
+</html>
+

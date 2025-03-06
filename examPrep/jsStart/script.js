@@ -48,3 +48,29 @@ let y = new String("John");
 
 // false
 
+const points1 = new Array(40, 100, 1, 5, 25, 10);
+const points2 = [40, 100, 1, 5, 25, 10];
+
+
+const numbers = [45, 4, 9, 16, 25];
+
+let txt = "";
+numbers.forEach(myFunction);
+
+
+// The JavaScript for of statement loops through the values of an iterable object.
+
+// It lets you loop over iterable data structures such as Arrays, Strings, Maps, NodeLists, and more
+let language = "JavaScript";
+
+let text = "";
+for (let x of language) {
+text += x;
+}
+
+
+// the For In Loop
+// The JavaScript for in statement loops through the properties of an Object:
+function myFunction(value, index, array) {
+  txt += value;
+}

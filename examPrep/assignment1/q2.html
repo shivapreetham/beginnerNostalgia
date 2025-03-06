@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>question2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        form {
+            width: 60%;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        ::placeholder {
+            color: #666;
+        }
+        div {
+            display: flex;
+            align-items: first baseline;
+            margin-right: 20px;
+        }
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="return checkandoutput(event)">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" placeholder="Your full name">
+        <div class="error" id="usernameError"></div>
+
+        <label for="father">Father's Name:</label>
+        <input type="text" name="father" id="father" placeholder="Your father's name">
+        <div class="error" id="fatherError"></div>
+
+        <label for="mother">Mother's Name:</label>
+        <input type="text" name="mother" id="mother" placeholder="Your mother's name">
+        <div class="error" id="motherError"></div>
+
+        <label for="address">Address:</label>
+        <textarea name="address" id="address" cols="30" rows="5"></textarea>
+        <div class="error" id="addressError"></div>
+
+        <label for="gender">Gender:</label>
+        <div>
+            <div><input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label></div>
+            <div><input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label></div>
+            <div><input type="radio" name="gender" id="trans" value="trans">
+                <label for="trans">Transgender</label></div>
+        </div>
+        <div class="error" id="genderError"></div>
+
+        <label for="class">Class:</label>
+        <select name="class" id="class">
+            <option value="10th">10th</option>
+            <option value="11th">11th</option>
+            <option value="12th">12th</option>
+        </select>
+        <div class="error" id="classError"></div>
+
+        <input type="checkbox" name="terms" id="t&c" value="yes">
+        <label for="t&c">I agree to give all my details to you</label>
+        <div class="error" id="termsError"></div>
+
+        <button type="submit">Submit details</button>
+    </form>
+
+    <script>
+        function checkandoutput(event) {
+            event.preventDefault(); 
+            document.querySelectorAll(".error").forEach(error => error.textContent = "");
+
+            let username = document.getElementById("username").value.trim();
+            let father = document.getElementById("father").value.trim();
+            let mother = document.getElementById("mother").value.trim();
+            let address = document.getElementById("address").value.trim();
+            let gender = document.querySelector('input[name="gender"]:checked');
+            let terms = document.getElementById("t&c").checked;
+
+            let isValid = true;
+
+            if (username === "") {
+                document.getElementById("usernameError").innerHTML = "Username is required.";
+                isValid = false;
+            }
+            if (father === "") {
+                document.getElementById("fatherError").innerHTML = "Father's Name is required.";
+                isValid = false;
+            }
+            if (mother === "") {
+                document.getElementById("motherError").innerHTML = "Mother's Name is required.";
+                isValid = false;
+            }
+            if (address === "") {
+                document.getElementById("addressError").innerHTML = "Address is required.";
+                isValid = false;
+            }
+            if (!gender) {
+                document.getElementById("genderError").innerHTML = "Please select a gender.";
+                isValid = false;
+            }
+            if (!terms) {
+                document.getElementById("termsError").innerHTML = "You must agree to the terms.";
+                isValid = false;
+            }
+
+            if (isValid) {
+                alert("Form submitted successfully!");
+                return true;
+            } else {
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
